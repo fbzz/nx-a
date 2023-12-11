@@ -16,7 +16,7 @@ export function Toastr(props: ToastrProps) {
     setDisplay(true);
     setTimeout(() => {
       setDisplay(false);
-    }, 5000);
+    }, 8000);
   }, [error]);
 
   return (
