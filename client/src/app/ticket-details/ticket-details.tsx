@@ -72,11 +72,10 @@ export function TicketDetails() {
   };
 
   const submit = async () => {
-    if (interactionType === "CREATE") {
-      await createNewTicket(description);
-    } else {
-      await updateTicket(completed, Number(assigneeId) || null);
-    }
+    interactionType === "CREATE"
+      ? await createNewTicket(description)
+      : await updateTicket(completed, Number(assigneeId) || null);
+
     navigate("/?preventFetch=true");
   };
 

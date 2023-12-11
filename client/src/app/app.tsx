@@ -9,6 +9,7 @@ import TicketDetails from "./ticket-details/ticket-details";
 import { useEffect } from "react";
 import { useTicketStore } from "./stores/tickets/tickets.store";
 import { useMainStore } from "./stores/main/main.store";
+import Toastr from "./components/toastr/toastr";
 
 const App = () => {
   const fetchUsers = useTicketStore((state) => state.fetchUsers);
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/:id" element={<TicketDetails />} />
           <Route path="/:create" element={<TicketDetails />} />
         </Routes>
+        <Toastr />
       </div>
     </>
   );

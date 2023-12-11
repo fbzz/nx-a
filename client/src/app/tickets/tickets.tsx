@@ -6,9 +6,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { ticketToHumanStatus } from "../utils";
 
 export function Tickets() {
-  const tickets = useTicketStore((state) => state.tickets);
-  const users = useTicketStore((state) => state.users);
-  const loading = useTicketStore((state) => state.loading);
+  const { tickets, users, loading } = useTicketStore((state) => state);
   const [status, setStatus] = useState(false);
   const fetchTickets = useTicketStore((state) => state.fetchTickets);
   const navigate = useNavigate();
@@ -20,7 +18,26 @@ export function Tickets() {
   };
 
   const filterByStatus = (status: boolean) => {
-    return tickets.filter((ticket) => ticket.completed === status);
+    const ticketsFiltered = tickets.filter(
+      (ticket) => ticket.completed === status
+    );
+
+    if (ticketsFiltered.length === 0) {
+      return (
+        <span data-testid="fallbackMessage" className="p-3">
+          No tickets available with the current filter ;(
+        </span>
+      );
+    }
+
+    return ticketsFiltered.map((t) => (
+      <TicketCard
+        {...t}
+        key={t.id}
+        user={filterByUserId(t.assigneeId)}
+        onCardSelect={(id) => onCardSelect(id)}
+      />
+    ));
   };
 
   const onCardSelect = (id: number) => {
@@ -61,19 +78,12 @@ export function Tickets() {
       >
         {!loading && (
           <>
-            {tickets ? (
-              <>
-                {filterByStatus(status).map((t) => (
-                  <TicketCard
-                    {...t}
-                    key={t.id}
-                    user={filterByUserId(t.assigneeId)}
-                    onCardSelect={(id) => onCardSelect(id)}
-                  />
-                ))}
-              </>
+            {tickets.length ? (
+              <>{filterByStatus(status)}</>
             ) : (
-              <span data-testid="fallbackMessage">No ticket available ;(</span>
+              <span data-testid="fallbackMessage" className="p-5">
+                No ticket available ;(
+              </span>
             )}
           </>
         )}

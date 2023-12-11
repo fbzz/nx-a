@@ -11,7 +11,6 @@ export type Store = {
 };
 
 export type Action = {
-  addNewTicket: (newTicket: Ticket) => void;
   fetchTickets: () => Promise<void>;
   fetchUsers: () => Promise<void>;
   fetchTicketDetails: (id: number) => Promise<void>;
@@ -23,11 +22,12 @@ export type Action = {
   updateAssigneeId: (assignedId: number | null) => Promise<void>;
   addLoading: () => void;
   removeLoading: () => void;
-  createNewTicket: (description: string) => Promise<Ticket>;
+  createNewTicket: (description: string) => Promise<void>;
   cleanEditingTicket: () => void;
+  cleanError: () => void;
 };
 
-//#TODO we can add some axios or other fetch library and improve all the fetch migrating to another file
+//#TODO we can add some axios or other fetch library and improve all the fetch migrating to another file, or just make the code less repetitive
 //But for this demo I'm going to use fetch
 //I'm trying to achieve a state machine, all the tickets actions and state should be on this file
 //With that we write a little bit more of code but we have more control on the state of the application
@@ -39,29 +39,44 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
   loading: 0,
   error: null,
   createNewTicket: async (description: string) => {
-    const result = await fetch("/api/tickets", {
-      method: "POST",
-      body: JSON.stringify({ description: description }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const newTicket: Ticket = await result.json();
-    await get().fetchTickets();
-    return newTicket;
+    try {
+      get().addLoading();
+      get().cleanError();
+      const result = await fetch("/api/tickets", {
+        method: "POST",
+        body: JSON.stringify({ description: description }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (!result.ok) {
+        throw new Error(result.status.toString());
+      }
+      const newTicket: Ticket = await result.json();
+      await get().fetchTickets();
+    } catch (e) {
+      set({
+        error: "Something went wrong, creating ticket! " + e,
+      });
+    } finally {
+      get().removeLoading();
+    }
   },
-  addNewTicket: (newTicket) =>
-    set((state) => ({ tickets: [...state.tickets, newTicket] })),
   fetchTickets: async () => {
+    get().cleanError();
     try {
       get().addLoading();
       const ticketsResponse = await fetch("/api/tickets");
+      if (!ticketsResponse.ok) {
+        throw new Error(ticketsResponse.status.toString());
+      }
       set({
         tickets: await ticketsResponse.json(),
       });
     } catch (error) {
+      console.log(error);
       set({
-        error: "Something went wrong, fetching Tickets!",
+        error: "Something went wrong, fetching Tickets! " + error,
       });
     } finally {
       get().removeLoading();
@@ -71,13 +86,16 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
     try {
       get().addLoading();
       const userResponse = await fetch("/api/users");
+      if (!userResponse.ok) {
+        throw new Error(userResponse.status.toString());
+      }
       const users = (await userResponse.json()) as User[];
       set({
         users: [...users, { name: "Unassigned", id: UNASSIGNED } as User],
       });
     } catch (error) {
       set({
-        error: "Something went wrong, fetching Users!",
+        error: "Something went wrong, fetching Users! " + error,
       });
     } finally {
       get().removeLoading();
@@ -87,18 +105,22 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
     try {
       get().addLoading();
       const ticketResponse = await fetch(`/api/tickets/${id}`);
+      if (!ticketResponse.ok) {
+        throw new Error(ticketResponse.status.toString());
+      }
       set({
         editingTicket: await ticketResponse.json(),
       });
     } catch (error) {
       set({
-        error: "Something went wrong, fetching ticket details",
+        error: "Something went wrong, fetching ticket details! " + error,
       });
     } finally {
       get().removeLoading();
     }
   },
   updateTicket: async (completed: boolean, assigneeId: number | null) => {
+    get().cleanError();
     let refetch = false;
     if (completed !== get().editingTicket?.completed) {
       await get().updateTicketStatus(completed);
@@ -113,23 +135,6 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
     if (refetch) {
       await get().fetchTickets();
     }
-
-    /*
-    //Because of the delay of updating we search for the ticket and update it offline
-    const index = get().tickets.findIndex(
-      (ticket) => ticket.id === get().editingTicket!.id
-    );
-    let updatedTicketList = [...get().tickets];
-    updatedTicketList.splice(index, 1, {
-      id: get().editingTicket!.id,
-      description: get().editingTicket!.description,
-      completed: completed,
-      assigneeId: Number(assigneeId) ? assigneeId : 0,
-    });
-
-    set(() => ({
-      tickets: [...updatedTicketList],
-    })); */
   },
   updateTicketStatus: async (completed: boolean) => {
     try {
@@ -138,10 +143,13 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
         `/api/tickets/${get().editingTicket?.id}/complete`,
         { method: completed ? "PUT" : "DELETE" }
       );
-      await ticketCompleteResponse.json();
+      if (!ticketCompleteResponse.ok) {
+        throw new Error(ticketCompleteResponse.status.toString());
+      }
+      await ticketCompleteResponse.status;
     } catch (error) {
       set({
-        error: "Something went wrong, updating ticket status",
+        error: "Something went wrong, updating ticket status " + error,
       });
     } finally {
       get().removeLoading();
@@ -157,7 +165,7 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
       await updateAssigneeResponse.status;
     } catch (error) {
       set({
-        error: "Something went wrong, updating ticket assignee",
+        error: "Something went wrong, updating ticket assignee " + error,
       });
     } finally {
       get().removeLoading();
@@ -171,5 +179,8 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
   },
   cleanEditingTicket: () => {
     set({ editingTicket: null });
+  },
+  cleanError: () => {
+    set({ error: "" });
   },
 }));

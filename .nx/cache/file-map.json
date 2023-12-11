@@ -381,7 +381,7 @@
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "7208709417852988591"
+        "hash": "16860596911517127308"
       },
       {
         "file": "yarn.lock",
@@ -649,7 +649,7 @@
       },
       {
         "file": ".nxcache/terminalOutputs/15366713101489253119",
-        "hash": "3244421341483603138"
+        "hash": "16491047948773739875"
       },
       {
         "file": ".nxcache/terminalOutputs/13349492238243509726",
@@ -713,19 +713,31 @@
       },
       {
         "file": ".nxcache/terminalOutputs/14804378330804824724",
+        "hash": "13928733757431244014"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/1647144274191696862",
+        "hash": "4440922803480935792"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10699007513459520803",
         "hash": "3244421341483603138"
       },
       {
-        "file": "dist/server/assets/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": "dist/server/main.js.map",
+        "hash": "16798410898443512548"
       },
       {
         "file": "dist/server/main.js",
         "hash": "17860476146767349989"
       },
       {
-        "file": "dist/server/main.js.map",
-        "hash": "16798410898443512548"
+        "file": "dist/server/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "challenge.ts",
+        "hash": "11729452984551355196"
       }
     ],
     "projectFileMap": {
@@ -797,7 +809,7 @@
         },
         {
           "file": "client/src/app/app.tsx",
-          "hash": "7669280887120324896",
+          "hash": "2413361055820869225",
           "deps": [
             "npm:react-router-dom",
             "npm:tailwindcss",
@@ -906,7 +918,7 @@
         },
         {
           "file": "client/src/app/stores/tickets/tickets.store.ts",
-          "hash": "13159052179354226569",
+          "hash": "4602502964882741951",
           "deps": [
             "npm:zustand",
             "shared-models"
@@ -923,7 +935,7 @@
         },
         {
           "file": "client/src/app/ticket-details/ticket-details.tsx",
-          "hash": "3608818876997033460",
+          "hash": "11781526684001103847",
           "deps": [
             "npm:react-router-dom",
             "npm:react",
@@ -940,7 +952,7 @@
         },
         {
           "file": "client/src/app/tickets/tickets.tsx",
-          "hash": "16449126079500483521",
+          "hash": "8142903824324926006",
           "deps": [
             "npm:react",
             "shared-models",
@@ -1019,6 +1031,21 @@
           "hash": "13967021809943739775",
           "deps": [
             "npm:zustand"
+          ]
+        },
+        {
+          "file": "client/src/app/components/toastr/toastr.spec.tsx",
+          "hash": "2265850501034867374",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/toastr/toastr.tsx",
+          "hash": "1543789388962749256",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
           ]
         }
       ],
