@@ -1,0 +1,1152 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@nestjs/common": "10.2.10",
+    "@nestjs/core": "10.2.10",
+    "@nestjs/platform-express": "10.2.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "6.11.2",
+    "tslib": "^2.3.0",
+    "zustand": "^4.4.7",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nestjs/schematics": "10.0.3",
+    "@nestjs/testing": "10.2.10",
+    "@nrwl/js": "17.1.3",
+    "@nx/cypress": "17.1.3",
+    "@nx/eslint": "17.1.3",
+    "@nx/eslint-plugin": "17.1.3",
+    "@nx/jest": "17.1.3",
+    "@nx/js": "17.1.3",
+    "@nx/nest": "17.1.3",
+    "@nx/node": "17.1.3",
+    "@nx/react": "17.1.3",
+    "@nx/vite": "^17.1.3",
+    "@nx/web": "17.1.3",
+    "@nx/webpack": "17.1.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@svgr/webpack": "^6.1.2",
+    "@swc-node/register": "~1.6.7",
+    "@swc/core": "~1.3.85",
+    "@swc/jest": "0.2.20",
+    "@testing-library/dom": "^8.13.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "^14.2.0",
+    "@types/jest": "29.4.4",
+    "@types/node": "18.14.2",
+    "@types/react": "18.2.24",
+    "@types/react-dom": "18.2.9",
+    "@types/react-router-dom": "5.3.3",
+    "@typescript-eslint/eslint-plugin": "6.13.1",
+    "@typescript-eslint/parser": "6.13.1",
+    "@vitest/coverage-v8": "~0.34.6",
+    "@vitest/ui": "~0.34.6",
+    "autoprefixer": "^10.4.16",
+    "css-loader": "^6.4.0",
+    "cypress": "^9.1.0",
+    "daisyui": "^4.4.19",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-cypress": "2.15.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "29.4.3",
+    "jest-environment-jsdom": "29.4.3",
+    "jest-preset-angular": "12.2.3",
+    "jsdom": "~22.1.0",
+    "nx": "17.1.3",
+    "postcss": "^8.4.32",
+    "prettier": "^2.6.2",
+    "react-refresh": "^0.10.0",
+    "reflect-metadata": "^0.1.13",
+    "style-loader": "^3.3.0",
+    "stylus": "0.59.0",
+    "stylus-loader": "^7.1.0",
+    "swc-loader": "0.1.15",
+    "tailwindcss": "^3.3.6",
+    "ts-jest": "29.1.1",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4",
+    "url-loader": "^4.1.1",
+    "vite": "~4.3.9",
+    "vitest": "~0.34.6",
+    "webpack": "^5.75.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "pathMappings": {
+    "@acme/shared-models": [
+      "shared-models/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "2303642404724327591"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "6542063798635250201"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "11404693289603134332"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "14932629080052825200"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "274147297244844465"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/project-graph.html",
+        "hash": "17036869540637447991"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt",
+        "hash": "5667550289807473445"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/environment.js",
+        "hash": "999196231633445264"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/main.js",
+        "hash": "11366588937091843483"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/polyfills.js",
+        "hash": "2110773196768975388"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/runtime.js",
+        "hash": "9652903316845995179"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/styles.css",
+        "hash": "5562174198026097626"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/styles.js",
+        "hash": "13596360365094399219"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "2942878752807931502"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "17433937400847069617"
+      },
+      {
+        "file": ".nxcache/13156270843977905999/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nxcache/13156270843977905999/source",
+        "hash": "2579218636547830304"
+      },
+      {
+        "file": ".nxcache/13156270843977905999/terminalOutput",
+        "hash": "4636843277877907513"
+      },
+      {
+        "file": ".nxcache/13156270843977905999.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nxcache/13887478205851865034/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nxcache/13887478205851865034/source",
+        "hash": "2579218636547830304"
+      },
+      {
+        "file": ".nxcache/13887478205851865034/terminalOutput",
+        "hash": "6606718559813602994"
+      },
+      {
+        "file": ".nxcache/13887478205851865034.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nxcache/run.json",
+        "hash": "2114752558571721870"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10130521641720303698",
+        "hash": "13292486381309556593"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10395435045490920682",
+        "hash": "3043238896946344704"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10497456867685144112",
+        "hash": "14513871262788399758"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10558236577411898098",
+        "hash": "1838756392980284900"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/11491915639310840858",
+        "hash": "134612504899300803"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/11505454495403063930",
+        "hash": "14506618371244499042"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/11710349537433555242",
+        "hash": "9856664296162502519"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/11757410029896686596",
+        "hash": "7035043399801056858"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/12079658332400715023",
+        "hash": "5856331443226266755"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/12252126886510390744",
+        "hash": "11480875033837537384"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/12303641332482237217",
+        "hash": "2664482231811414455"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/12532359781250313831",
+        "hash": "12509693126207896305"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/12573473890976093562",
+        "hash": "10555299262454836560"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13156270843977905999",
+        "hash": "4636843277877907513"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13172276527343326126",
+        "hash": "7007651952544486527"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13531201774420065808",
+        "hash": "16271027120763567887"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13628090001643784131",
+        "hash": "8897884176610205920"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13662094417414782381",
+        "hash": "14770013686472057887"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13887478205851865034",
+        "hash": "6606718559813602994"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13955287948563859242",
+        "hash": "13689358676006176439"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15447786564614449978",
+        "hash": "3712734031554379205"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15776315320727958427",
+        "hash": "13580581957595126828"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15934115305160979093",
+        "hash": "2176362804983379126"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16160071019198027431",
+        "hash": "14279373206972823588"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/163324236788672941",
+        "hash": "12223655174020763992"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16916331608626030487",
+        "hash": "16857236782395323360"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/17534389283219686145",
+        "hash": "12366726517567353371"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/18251100220959737809",
+        "hash": "2089601571389526917"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/2321692055585796029",
+        "hash": "14539736808939805185"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/2828033817073311793",
+        "hash": "2553364621424064877"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3006259051832811587",
+        "hash": "9249305749757102894"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/4715590523030889068",
+        "hash": "14263559696621838086"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/4883146820963250202",
+        "hash": "13263978484583275638"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/5427876238168870223",
+        "hash": "12786145067994768305"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/5679481836812964830",
+        "hash": "5369623853395094905"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/8342903491600970019",
+        "hash": "1390911570797312962"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/8808037483076224393",
+        "hash": "9490384426730382045"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/914041134280261567",
+        "hash": "9752393350846093268"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9396437036696254084",
+        "hash": "14263559696621838086"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9546983333525331360",
+        "hash": "11499423433264880688"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9847273632773681806",
+        "hash": "5427789897136203163"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9914648164477097856",
+        "hash": "14506618371244499042"
+      },
+      {
+        "file": "README.md",
+        "hash": "14167940645527051736"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "7121560415157204401"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9084884494335109525"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13834947062202980089"
+      },
+      {
+        "file": "package.json",
+        "hash": "16336634445652129991"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "13287388091129307825"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7208709417852988591"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "4297474365697790019"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13658329734620320541",
+        "hash": "14111481002796531170"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/950186139974518029",
+        "hash": "10166453018403040117"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/17490867776067647903",
+        "hash": "18423820532163170209"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/5556971204424330465",
+        "hash": "3397912583539418422"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/2679704680464086439",
+        "hash": "2721902405260825322"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3567345261021289123",
+        "hash": "15794789875566934367"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/4709897272135468497",
+        "hash": "1421515553139835430"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/572662960199862595",
+        "hash": "10703301189229581324"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16131646191253656687",
+        "hash": "881036491544551943"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/12938665059406739561",
+        "hash": "13668756229506784279"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/2028810708689590342",
+        "hash": "13793196616718144208"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/4278605699908466827",
+        "hash": "4738410255810858306"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13454959921010791202",
+        "hash": "1560335761399786299"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15893295851396127736",
+        "hash": "4222899288407935890"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/1276123530785838384",
+        "hash": "5770482637360848546"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14247506459699618725",
+        "hash": "78597017879144465"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14811136717542393519",
+        "hash": "3783707736806475219"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/1923425196269102765",
+        "hash": "3657073160954032219"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/17550901282684394845",
+        "hash": "4793354284532568699"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/8618703739866824348",
+        "hash": "12595238819741074979"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13602218891171738916",
+        "hash": "9456979252842213197"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/168139417442664844",
+        "hash": "13452026296719093356"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/7269013443453863704",
+        "hash": "13052882952366797955"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16175862308587103217",
+        "hash": "3697383619712529154"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14532190111175810713",
+        "hash": "1571229556956186549"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14421864851836990809",
+        "hash": "6930862025622807774"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10381304132921900014",
+        "hash": "12100943915589128716"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/7299938180937675123",
+        "hash": "14488966598816831966"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/5722938577856393942",
+        "hash": "10582665806029766208"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16484081385475529716",
+        "hash": "7464162380362946945"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/259629445072397426",
+        "hash": "13735333516339225001"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/8881388142531456087",
+        "hash": "5051962055466552244"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13074603350322000935",
+        "hash": "4778166144786522431"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14673455512389104408",
+        "hash": "11966682429122675159"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3526849302138434895",
+        "hash": "18300878449444474662"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3027048841518019673",
+        "hash": "7951622039533703968"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9849457064301373243",
+        "hash": "11238346359133301376"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/1730212735687906077",
+        "hash": "12129269282144302715"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9955697289942455253",
+        "hash": "4887650293835627304"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10672392071165138966",
+        "hash": "1957387960757844039"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3979307003274091056",
+        "hash": "2855011497193629884"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/17571765770385311125",
+        "hash": "8717817206324083013"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/6991289403457605301",
+        "hash": "4856738682352059827"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14669894912027127778",
+        "hash": "7784050924229418451"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10446053913266425154",
+        "hash": "13130171698622611914"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3350984398290926821",
+        "hash": "10817369871247697904"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/6497006747257273360",
+        "hash": "17375110970130330954"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/18361854539001384389",
+        "hash": "8365162021039986915"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/9874756805426220701",
+        "hash": "12249422249661583949"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16618373866252925137",
+        "hash": "9111744790211534649"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15547918039484942482",
+        "hash": "12912646265144099076"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/8050970896900115992",
+        "hash": "1835111624514351136"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/16480100164850675184",
+        "hash": "8750869389972944563"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14855800728228547459",
+        "hash": "13025427987090640600"
+      },
+      {
+        "file": ".nxcache/261410127864905113/terminalOutput",
+        "hash": "17864936890855475976"
+      },
+      {
+        "file": ".nxcache/261410127864905113/source",
+        "hash": "2579218636547830304"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/261410127864905113",
+        "hash": "17864936890855475976"
+      },
+      {
+        "file": ".nxcache/261410127864905113/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nxcache/261410127864905113.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/10850940863414968198",
+        "hash": "10376466969205080348"
+      },
+      {
+        "file": ".nxcache/10850940863414968198.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nxcache/10850940863414968198/source",
+        "hash": "2579218636547830304"
+      },
+      {
+        "file": ".nxcache/10850940863414968198/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nxcache/10850940863414968198/terminalOutput",
+        "hash": "10376466969205080348"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14453053114101257988",
+        "hash": "1935745087005853697"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15366713101489253119",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/13349492238243509726",
+        "hash": "18109866537391791495"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/3507675293844611810",
+        "hash": "18042507868512548221"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14945835593751062756",
+        "hash": "8843762841442344688"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/4395415341435545627",
+        "hash": "5807528619952428148"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/11693355930090189395",
+        "hash": "18410723539816427333"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/2463603960493563569",
+        "hash": "10175026693829892345"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/4860579733715659682",
+        "hash": "8635930102225084375"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/5440894262008307825",
+        "hash": "17967183965691470080"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/1354308477188884756",
+        "hash": "3408596303928759153"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/15940961611362748199",
+        "hash": "1928616458351526786"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/17965363374553846061",
+        "hash": "7154280525700637198"
+      },
+      {
+        "file": ".nxcache/17965363374553846061/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nxcache/17965363374553846061.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nxcache/17965363374553846061/source",
+        "hash": "2579218636547830304"
+      },
+      {
+        "file": ".nxcache/17965363374553846061/terminalOutput",
+        "hash": "7154280525700637198"
+      },
+      {
+        "file": ".nxcache/terminalOutputs/14804378330804824724",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "dist/server/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "dist/server/main.js",
+        "hash": "17860476146767349989"
+      },
+      {
+        "file": "dist/server/main.js.map",
+        "hash": "16798410898443512548"
+      }
+    ],
+    "projectFileMap": {
+      "shared-models": [
+        {
+          "file": "shared-models/.eslintrc.json",
+          "hash": "2210066167144675689"
+        },
+        {
+          "file": "shared-models/README.md",
+          "hash": "15204363035967669430"
+        },
+        {
+          "file": "shared-models/jest.config.ts",
+          "hash": "7847403208775294881"
+        },
+        {
+          "file": "shared-models/project.json",
+          "hash": "8746764632371935996"
+        },
+        {
+          "file": "shared-models/src/index.ts",
+          "hash": "5960793450173596579"
+        },
+        {
+          "file": "shared-models/tsconfig.json",
+          "hash": "18330180151193889737"
+        },
+        {
+          "file": "shared-models/tsconfig.lib.json",
+          "hash": "9307280892995242626"
+        },
+        {
+          "file": "shared-models/tsconfig.spec.json",
+          "hash": "15659688836178903222"
+        }
+      ],
+      "client": [
+        {
+          "file": "client/.eslintrc.json",
+          "hash": "1331540844784746760"
+        },
+        {
+          "file": "client/README.md",
+          "hash": "14348731288152984215"
+        },
+        {
+          "file": "client/index.html",
+          "hash": "1392207752731855456"
+        },
+        {
+          "file": "client/postcss.config.js",
+          "hash": "8080819916861303613",
+          "deps": [
+            "npm:path"
+          ]
+        },
+        {
+          "file": "client/project.json",
+          "hash": "11785598056601010799"
+        },
+        {
+          "file": "client/src/__mocks__/zustand.ts",
+          "hash": "2870690568357549729",
+          "deps": [
+            "npm:zustand",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/app.tsx",
+          "hash": "7669280887120324896",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:tailwindcss",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/header/header.tsx",
+          "hash": "14784263717836750931",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "client/src/app/components/input/input.spec.tsx",
+          "hash": "10220161601473344934",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/input/input.tsx",
+          "hash": "10273724416504725769",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/loader/loader.spec.tsx",
+          "hash": "6900964501968335362",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/loader/loader.tsx",
+          "hash": "6447517377882328057"
+        },
+        {
+          "file": "client/src/app/components/select/select.spec.tsx",
+          "hash": "15924490986654149069",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/select/select.tsx",
+          "hash": "2088796461136103285",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/ticket-card/ticket-card.spec.tsx",
+          "hash": "4178325171584821142",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/ticket-card/ticket-card.tsx",
+          "hash": "6970241813620687259",
+          "deps": [
+            "shared-models",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/ticket-create-form/ticket-create-form.spec.tsx",
+          "hash": "11694023599923728707",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/ticket-create-form/ticket-create-form.tsx",
+          "hash": "822915417552810669"
+        },
+        {
+          "file": "client/src/app/components/ticket-edit-form/ticket-edit-form.spec.tsx",
+          "hash": "14246531846663721573",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/ticket-edit-form/ticket-edit-form.tsx",
+          "hash": "14436302867544332497",
+          "deps": [
+            "shared-models"
+          ]
+        },
+        {
+          "file": "client/src/app/components/toggle/toggle.spec.tsx",
+          "hash": "11339568834020539629",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "client/src/app/components/toggle/toggle.tsx",
+          "hash": "3247314086493368255",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "client/src/app/stores/tickets/tickets.store.ts",
+          "hash": "13159052179354226569",
+          "deps": [
+            "npm:zustand",
+            "shared-models"
+          ]
+        },
+        {
+          "file": "client/src/app/ticket-details/ticket-details.spec.tsx",
+          "hash": "3647327603285590073",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom",
+            "npm:zustand"
+          ]
+        },
+        {
+          "file": "client/src/app/ticket-details/ticket-details.tsx",
+          "hash": "3608818876997033460",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:react",
+            "shared-models"
+          ]
+        },
+        {
+          "file": "client/src/app/tickets/tickets.spec.tsx",
+          "hash": "14731433317768541240",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "client/src/app/tickets/tickets.tsx",
+          "hash": "16449126079500483521",
+          "deps": [
+            "npm:react",
+            "shared-models",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "client/src/app/utils/index.ts",
+          "hash": "11378137731419151925"
+        },
+        {
+          "file": "client/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "client/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "client/src/main.tsx",
+          "hash": "11363003365026480076",
+          "deps": [
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "client/src/setup-vitest.ts",
+          "hash": "14664869691541422586",
+          "deps": [
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "client/src/styles.css",
+          "hash": "4021993318893677962"
+        },
+        {
+          "file": "client/tailwind.config.js",
+          "hash": "17609509126272041659",
+          "deps": [
+            "npm:@nx/react",
+            "npm:path",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "client/tsconfig.app.json",
+          "hash": "1201790791711484535"
+        },
+        {
+          "file": "client/tsconfig.json",
+          "hash": "4146661175609903209"
+        },
+        {
+          "file": "client/tsconfig.spec.json",
+          "hash": "176377910107006711"
+        },
+        {
+          "file": "client/vite.config.ts",
+          "hash": "12974282884715895580",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        },
+        {
+          "file": "client/vitest.config.ts",
+          "hash": "11153331159939033418",
+          "deps": [
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "client/src/app/stores/main/main.store.ts",
+          "hash": "13967021809943739775",
+          "deps": [
+            "npm:zustand"
+          ]
+        }
+      ],
+      "server": [
+        {
+          "file": "server/.eslintrc.json",
+          "hash": "2095286952134203255"
+        },
+        {
+          "file": "server/README.md",
+          "hash": "2004448523321094873"
+        },
+        {
+          "file": "server/jest.config.ts",
+          "hash": "14283937662701274094"
+        },
+        {
+          "file": "server/project.json",
+          "hash": "1263050797687311375"
+        },
+        {
+          "file": "server/src/app/app.module.ts",
+          "hash": "12343336929695710565",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "server/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "server/src/main.ts",
+          "hash": "2723209554388042942",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "server/src/tickets/tickets.controller.spec.ts",
+          "hash": "4142267474090349934",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "server/src/tickets/tickets.controller.ts",
+          "hash": "9727051598140809837",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "server/src/tickets/tickets.module.ts",
+          "hash": "9968096226248738382",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "server/src/tickets/tickets.service.spec.ts",
+          "hash": "16511226213540507061",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "server/src/tickets/tickets.service.ts",
+          "hash": "14087175012210566802",
+          "deps": [
+            "npm:@nestjs/common",
+            "shared-models"
+          ]
+        },
+        {
+          "file": "server/src/users/users.controller.spec.ts",
+          "hash": "1961726537139140132",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "server/src/users/users.controller.ts",
+          "hash": "8931187584594615930",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "server/src/users/users.module.ts",
+          "hash": "9153994285988814599",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "server/src/users/users.service.spec.ts",
+          "hash": "7278099433523887940",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "server/src/users/users.service.ts",
+          "hash": "9253386373304752105",
+          "deps": [
+            "npm:@nestjs/common",
+            "shared-models"
+          ]
+        },
+        {
+          "file": "server/src/utils/random-delay.ts",
+          "hash": "5468426687559655769"
+        },
+        {
+          "file": "server/tsconfig.app.json",
+          "hash": "18100974692102514793"
+        },
+        {
+          "file": "server/tsconfig.json",
+          "hash": "6803799812066263642"
+        },
+        {
+          "file": "server/tsconfig.spec.json",
+          "hash": "3552237631424410558"
+        }
+      ]
+    }
+  }
+}

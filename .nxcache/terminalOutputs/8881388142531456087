@@ -1,0 +1,41 @@
+
+[7m[1m[36m RUN [39m[22m[27m [36mv0.34.6[39m [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/client[39m
+
+[31mCancelling test run. Press CTRL+c again to exit forcefully.
+[39m
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:89960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ [2m[90m↓[39m[22m src/app/components/header/header.spec.tsx [2m ([22m[2m0 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/toggle/toggle.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/select/select.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/loader/loader.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/input/input.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/ticket-create-form/ticket-create-form.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/ticket-card/ticket-card.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/components/ticket-edit-form/ticket-edit-form.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/ticket-details/ticket-details.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+ [2m[90m↓[39m[22m src/app/tickets/tickets.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m
+
+[2m Test Files [22m [33m10 skipped[39m[90m (10)[39m
+[2m      Tests [22m [90m (9)[39m
+[2m   Start at [22m 01:57:57
+[2m   Duration [22m 2.60s[2m (transform 740ms, setup 4ms, collect 5.10s, tests 0ms, environment 10.57s, prepare 1.52s)[22m
+

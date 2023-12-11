@@ -1,26 +1,83 @@
-import { Ticket, User } from '@acme/shared-models';
-import styles from './tickets.module.css';
+import TicketCard from "../components/ticket-card/ticket-card";
+import { useEffect, useState } from "react";
+import { useTicketStore } from "../stores/tickets/tickets.store";
+import { User } from "@acme/shared-models";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { ticketToHumanStatus } from "../utils";
 
-export interface TicketsProps {
-  tickets: Ticket[];
-  users: User[];
-}
+export function Tickets() {
+  const tickets = useTicketStore((state) => state.tickets);
+  const users = useTicketStore((state) => state.users);
+  const loading = useTicketStore((state) => state.loading);
+  const [status, setStatus] = useState(false);
+  const fetchTickets = useTicketStore((state) => state.fetchTickets);
+  const navigate = useNavigate();
+  const [queryParameters, setQueryParmeters] = useSearchParams();
 
-export function Tickets(props: TicketsProps) {
+  const filterByUserId = (assigneeId: number | null): User | null => {
+    if (!assigneeId) return null;
+    return users.filter((user) => user.id === assigneeId)[0];
+  };
+
+  const filterByStatus = (status: boolean) => {
+    return tickets.filter((ticket) => ticket.completed === status);
+  };
+
+  const onCardSelect = (id: number) => {
+    navigate(`/${id}`);
+  };
+
+  //Because of the delay from the BE we prevent the refetch and update locally
+  //But we just prevent one time and remove the parameter from the URL
+  useEffect(() => {
+    const preventFetch = queryParameters.get("preventFetch");
+    if (preventFetch) {
+      queryParameters.delete("preventFetch");
+      setQueryParmeters(queryParameters);
+      return;
+    }
+    fetchTickets();
+  }, []);
+
   return (
-    <div className={styles['tickets']}>
-      <h2>Tickets</h2>
-      {props.tickets ? (
-        <ul>
-          {props.tickets.map((t) => (
-            <li key={t.id}>
-              Ticket: {t.id}, {t.description}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <span>...</span>
-      )}
+    <div className="flex flex-col p-5">
+      <div className="flex flex-row items-center justify-center m-3 animate__animated animate__fadeInDown">
+        {!loading ? (
+          <button
+            className="btn btn-secondary w-32"
+            data-testid="filterByStatus"
+            onClick={() => setStatus(!status)}
+          >
+            Filter by {ticketToHumanStatus(!status)}
+          </button>
+        ) : (
+          <span className="loading loading-dots loading-lg"></span>
+        )}
+      </div>
+
+      <div
+        className="flex flex-row justify-center  flex-wrap"
+        data-testid="container"
+      >
+        {!loading && (
+          <>
+            {tickets ? (
+              <>
+                {filterByStatus(status).map((t) => (
+                  <TicketCard
+                    {...t}
+                    key={t.id}
+                    user={filterByUserId(t.assigneeId)}
+                    onCardSelect={(id) => onCardSelect(id)}
+                  />
+                ))}
+              </>
+            ) : (
+              <span data-testid="fallbackMessage">No ticket available ;(</span>
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

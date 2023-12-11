@@ -1,0 +1,138 @@
+
+[7m[1m[36m RUN [39m[22m[27m [36mv0.34.6[39m [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/client[39m
+
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:86490) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ [33m❯[39m src/app/components/header/header.spec.tsx [2m ([22m[2m0 test[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m src/app/components/loader/loader.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 24[2mms[22m[39m
+ [32m✓[39m src/app/components/select/select.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 30[2mms[22m[39m
+ [32m✓[39m src/app/components/toggle/toggle.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 31[2mms[22m[39m
+ [32m✓[39m src/app/components/ticket-card/ticket-card.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 31[2mms[22m[39m
+ [32m✓[39m src/app/components/input/input.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 37[2mms[22m[39m
+ [32m✓[39m src/app/components/ticket-create-form/ticket-create-form.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 51[2mms[22m[39m
+ [32m✓[39m src/app/components/ticket-edit-form/ticket-edit-form.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 109[2mms[22m[39m
+[90mstderr[2m | src/app/components/ticket-edit-form/ticket-edit-form.spec.tsx[2m > [22m[2mTicketEditForm[2m > [22m[2mshould render successfully[22m[39m
+Warning: You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
+    at select
+    at label
+    at Select (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/client/src/app/components/select/select.tsx:3:19)
+    at TicketEditForm (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/client/src/app/components/ticket-edit-form/ticket-edit-form.tsx:12:3)
+
+ [33m❯[39m src/app/ticket-details/ticket-details.spec.tsx [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 113[2mms[22m[39m
+[31m   [33m❯[31m src/app/ticket-details/ticket-details.spec.tsx[2m > [22mApp[2m > [22mrenders headline[39m
+[31m     → [BrowserRouter] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>[39m
+[90mstderr[2m | src/app/ticket-details/ticket-details.spec.tsx[2m > [22m[2mApp[2m > [22m[2mrenders headline[22m[39m
+Error: Uncaught [Error: [BrowserRouter] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>]
+    at reportException (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)
+    at invokeEventListeners (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at beginWork$1 (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+    at performUnitOfWork (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: [BrowserRouter] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+    at Object.invariant [as UNSAFE_invariant] [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4m@remix-run[24m/router/history.ts:480:11[90m)[39m
+    at [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-router-dom[24m/node_modules/[4mreact-router[24m/lib/components.tsx:593:5
+    at [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1195:17
+    at [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1158:17
+    at mapIntoArray [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1049:23[90m)[39m
+    at mapChildren [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1157:3[90m)[39m
+    at Object.forEach [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1194:3[90m)[39m
+    at createRoutesFromChildren [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-router-dom[24m/node_modules/[4mreact-router[24m/lib/components.tsx:575:18[90m)[39m
+    at Routes [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-router-dom[24m/node_modules/[4mreact-router[24m/lib/components.tsx:413:20[90m)[39m
+    at renderWithHooks [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-dom[24m/cjs/react-dom.development.js:16305:18[90m)[39m
+Error: Uncaught [Error: [BrowserRouter] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>]
+    at reportException (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+    at innerInvokeEventListeners (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:353:9)
+    at invokeEventListeners (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:104:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)
+    at Object.invokeGuardedCallbackDev (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at beginWork$1 (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+    at performUnitOfWork (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-dom/cjs/react-dom.development.js:26560:12) Error: [BrowserRouter] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+    at Object.invariant [as UNSAFE_invariant] [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4m@remix-run[24m/router/history.ts:480:11[90m)[39m
+    at [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-router-dom[24m/node_modules/[4mreact-router[24m/lib/components.tsx:593:5
+    at [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1195:17
+    at [90m/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1158:17
+    at mapIntoArray [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1049:23[90m)[39m
+    at mapChildren [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1157:3[90m)[39m
+    at Object.forEach [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact[24m/cjs/react.development.js:1194:3[90m)[39m
+    at createRoutesFromChildren [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-router-dom[24m/node_modules/[4mreact-router[24m/lib/components.tsx:575:18[90m)[39m
+    at Routes [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-router-dom[24m/node_modules/[4mreact-router[24m/lib/components.tsx:413:20[90m)[39m
+    at renderWithHooks [90m(/Users/fzuin/Desktop/nx/nx-coding-assignment-main/[39mnode_modules/[4mreact-dom[24m/cjs/react-dom.development.js:16305:18[90m)[39m
+The above error occurred in the <Routes> component:
+
+    at Routes (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-router-dom/node_modules/react-router/dist/umd/react-router.development.js:1131:7)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ [32m✓[39m src/app/tickets/tickets.spec.tsx [2m ([22m[2m1 test[22m[2m)[22m[90m 92[2mms[22m[39m
+[90mstderr[2m | src/app/tickets/tickets.spec.tsx[2m > [22m[2mTickets[2m > [22m[2mshould render successfully[22m[39m
+Warning: An update to Tickets inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at Tickets (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/client/src/app/tickets/tickets.tsx:14:41)
+    at RenderedRoute (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-router-dom/node_modules/react-router/dist/umd/react-router.development.js:540:7)
+    at Routes (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-router-dom/node_modules/react-router/dist/umd/react-router.development.js:1131:7)
+    at Router (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-router-dom/node_modules/react-router/dist/umd/react-router.development.js:1063:17)
+    at BrowserRouter (/Users/fzuin/Desktop/nx/nx-coding-assignment-main/node_modules/react-router-dom/dist/umd/react-router-dom.development.js:305:7)
+
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/app/components/header/header.spec.tsx [2m[ src/app/components/header/header.spec.tsx ][22m
+[31m[1mError[22m: No test found in suite src/app/components/header/header.spec.tsx[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/app/ticket-details/ticket-details.spec.tsx[2m > [22mApp[2m > [22mrenders headline
+[31m[1mError[22m: [BrowserRouter] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>[39m
+[90m [2m❯[22m Object.invariant [as UNSAFE_invariant] ../node_modules/@remix-run/router/history.ts:[2m480:11[22m[39m
+[90m [2m❯[22m ../node_modules/react-router-dom/node_modules/react-router/lib/components.tsx:[2m593:5[22m[39m
+[90m [2m❯[22m ../node_modules/react/cjs/react.development.js:[2m1195:17[22m[39m
+[90m [2m❯[22m ../node_modules/react/cjs/react.development.js:[2m1158:17[22m[39m
+[90m [2m❯[22m mapIntoArray ../node_modules/react/cjs/react.development.js:[2m1049:23[22m[39m
+[90m [2m❯[22m mapChildren ../node_modules/react/cjs/react.development.js:[2m1157:3[22m[39m
+[90m [2m❯[22m Object.forEach ../node_modules/react/cjs/react.development.js:[2m1194:3[22m[39m
+[90m [2m❯[22m createRoutesFromChildren ../node_modules/react-router-dom/node_modules/react-router/lib/components.tsx:[2m575:18[22m[39m
+[90m [2m❯[22m Routes ../node_modules/react-router-dom/node_modules/react-router/lib/components.tsx:[2m413:20[22m[39m
+[90m [2m❯[22m renderWithHooks ../node_modules/react-dom/cjs/react-dom.development.js:[2m16305:18[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m8 passed[39m[22m[90m (10)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m8 passed[39m[22m[90m (9)[39m
+[2m   Start at [22m 01:20:50
+[2m   Duration [22m 2.57s[2m (transform 490ms, setup 2ms, collect 4.74s, tests 522ms, environment 8.78s, prepare 1.78s)[22m
+
