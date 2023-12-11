@@ -24,7 +24,10 @@ export function Tickets() {
 
     if (ticketsFiltered.length === 0) {
       return (
-        <span data-testid="fallbackMessage" className="p-3">
+        <span
+          data-testid="fallbackMessage"
+          className="p-3 animate__animated animate__fadeInUp"
+        >
           No tickets available with the current filter ;(
         </span>
       );
