@@ -8,9 +8,9 @@ import { ticketToHumanStatus } from "../utils";
 export function Tickets() {
   const { tickets, users, loading } = useTicketStore((state) => state);
   const [status, setStatus] = useState(false);
+  const [queryParameters, setQueryParameters] = useSearchParams();
   const fetchTickets = useTicketStore((state) => state.fetchTickets);
   const navigate = useNavigate();
-  const [queryParameters, setQueryParmeters] = useSearchParams();
 
   const filterByUserId = (assigneeId: number | null): User | null => {
     if (!assigneeId) return null;
@@ -50,7 +50,7 @@ export function Tickets() {
     const preventFetch = queryParameters.get("preventFetch");
     if (preventFetch) {
       queryParameters.delete("preventFetch");
-      setQueryParmeters(queryParameters);
+      setQueryParameters(queryParameters);
       return;
     }
     fetchTickets();
