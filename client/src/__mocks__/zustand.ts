@@ -1,5 +1,6 @@
 // __mocks__/zustand.ts
 import * as zustand from "zustand";
+import { vi } from "vitest";
 import { act } from "@testing-library/react";
 
 const { create: actualCreate, createStore: actualCreateStore } =
