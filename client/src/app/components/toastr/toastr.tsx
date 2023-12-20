@@ -2,10 +2,7 @@ import { memo, useEffect, useState } from "react";
 import { useTicketStore } from "../../stores/tickets/tickets.store";
 import { createPortal } from "react-dom";
 
-/* eslint-disable-next-line */
-export interface ToastrProps {}
-
-export function Toastr(props: ToastrProps) {
+export function Toastr() {
   const { error } = useTicketStore((state) => state);
   const [display, setDisplay] = useState(false);
 

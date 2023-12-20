@@ -53,7 +53,7 @@ export const useTicketStore = create<Store & Action>()((set, get) => ({
         throw new Error(result.status.toString());
       }
       const newTicket: Ticket = await result.json();
-      await get().fetchTickets();
+      set({ tickets: [...get().tickets, newTicket] });
     } catch (e) {
       set({
         error: "Something went wrong, creating ticket! " + e,
